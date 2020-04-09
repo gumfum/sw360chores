@@ -21,8 +21,8 @@ if [[ $1 == "--cleanup" ]]; then
 fi
 
 if [ ! -f "$DIR/$TARGET" ]; then
-    if [[ -f $DIR/../../proxy.env ]]; then
-        source $DIR/../../proxy.env
+    if [[ -f $DIR/../../configuration/proxy.env ]]; then
+        source $DIR/../../configuration/proxy.env
     fi
 
     ################################################################################
